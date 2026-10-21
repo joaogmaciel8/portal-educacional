@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EletroTech | Circuitos Integrados</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo-area">
+            <img src="assets/Ícone de Microchip CI com Circuitos.png"
+                 alt="Logo EletroTech">
+
+            <span>EletroTech</span>
+        </div>
+
+        <nav class="top-menu">
+            <a href="#inicio">Início</a>
+            <a href="#conceito">Conceito</a>
+            <a href="#tipos">Tipos</a>
+            <a href="#referencias">Referências</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="campoPesquisa"
+                    placeholder="Pesquisar..."
+                >
+            </div>
+
+            <button
+                class="btn-login"
+                onclick="mostrarLogin()"
+            >
+                Login
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= LAYOUT ================= -->
+
+    <div class="layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+
+<aside class="sidebar">
+
+    <h2>CONTEÚDOS</h2>
+
+    <nav class="side-menu">
+
+        <a href="#">
+            1.1 - Resistores e a Lei de Ohm
+        </a>
+
+        <a href="#">
+            1.2 - Capacitores e Armazenamento de Energia
+        </a>
+
+        <a href="#">
+            1.3 - Indutores e Eletromagnetismo
+        </a>
+
+        <a href="#">
+            1.4 - Associação de Componentes
+        </a>
+
+        <a href="#">
+            2.1 - Diodos e Retificação
+        </a>
+
+        <a href="#">
+            2.2 - Transistores Bipolares de Junção (TBJ)
+        </a>
+
+        <a href="#">
+            2.3 - Transistores de Efeito de Campo (MOSFETs)
+        </a>
+
+        <a href="#" class="active">
+            2.4 - Circuitos Integrados (CIs)
+        </a>
+
+        <a href="#">
+            3.1 - Corrente Contínua (CC) vs. Corrente Alternada (CA)
+        </a>
+
+        <a href="#">
+            3.2 - Leis de Kirchhoff
+        </a>
+
+        <a href="#">
+            3.3 - Potência Elétrica e Efeito Joule
+        </a>
+
+        <a href="#">
+            3.4 - Frequência e Sinais Elétricos
+        </a>
+
+        <a href="#">
+            4.1 - Circuitos de Filtros Passivos (RC e RL)
+        </a>
+
+        <a href="#">
+            4.2 - Divisores de Tensão e Corrente
+        </a>
+
+        <a href="#">
+            4.3 - Fontes de Alimentação Lineares
+        </a>
+
+        <a href="#">
+            4.4 - Circuitos de Temporização (Constante de Tempo RC)
+        </a>
+
+        <a href="#">
+            5.1 - Dispositivos de Proteção de Circuitos
+        </a>
+
+        <a href="#">
+            5.2 - Materiais Condutores, Isolantes e Semicondutores
+        </a>
+
+        <a href="#">
+            5.3 - Uso do Multímetro no Diagnóstico de Componentes
+        </a>
+
+        <a href="#">
+            5.4 - Relés e Chaves Eletromecânicas
+        </a>
+
+    </nav>
+
+</aside>
+
+
+        <!-- ================= CONTEUDO ================= -->
+
+        <main class="main-content">
+
+
+            <!-- HERO -->
+
+            <section class="hero" id="inicio">
+
+                <div class="hero-text">
+
+                    <span class="module-label">
+                        GRUPO 06
+                    </span>
+
+                    <h1>
+                        Circuitos Integrados
+                    </h1>
+
+                    <p>
+                        Conheça os circuitos integrados,
+                        seus componentes, tipos, aplicações
+                        e importância na eletrônica moderna.
+                    </p>
+
+                    <button
+                        class="btn-primary"
+                        onclick="irPara('conceito')"
+                    >
+                        Começar estudo
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= INTRODUCAO ================= -->
+
+            <section
+                class="content-section"
+                id="conceito"
+            >
+
+                <span class="section-tag">
+                    INTRODUÇÃO
+                </span>
+
+                <h2>
+                    O que é um Circuito Integrado?
+                </h2>
+
+                <p>
+                    Os circuitos integrados (CIs) são chips
+                    que contêm diversos componentes eletrônicos
+                    miniaturizados, como transistores,
+                    resistores e capacitores, geralmente
+                    fabricados em uma pequena pastilha de
+                    material semicondutor.
+                </p>
+
+                <p>
+                    São projetados para desempenhar funções
+                    específicas, como processamento de sinais,
+                    armazenamento de dados e amplificação
+                    de sinais.
+                </p>
+
+            </section>
+
+
+            <!-- ================= CONTEUDO TECNICO ================= -->
+
+            <section class="content-section">
+
+                <span class="section-tag">
+                    CONTEÚDO TÉCNICO
+                </span>
+
+                <h2>
+                    Como funcionam os Circuitos Integrados?
+                </h2>
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Fabricação
+                        </h3>
+
+                        <p>
+                            Os circuitos integrados são
+                            fabricados principalmente com
+                            silício.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Transistores
+                        </h3>
+
+                        <p>
+                            Um único chip pode reunir milhares,
+                            milhões ou até bilhões de
+                            transistores.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Componentes
+                        </h3>
+
+                        <p>
+                            Os CIs podem reunir diferentes
+                            componentes eletrônicos em uma
+                            pequena estrutura.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= TIPOS ================= -->
+
+            <section
+                class="content-section"
+                id="tipos"
+            >
+
+                <span class="section-tag">
+                    TIPOS DE CIs
+                </span>
+
+                <h2>
+                    Principais tipos de Circuitos Integrados
+                </h2>
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <h3>
+                            CIs Analógicos
+                        </h3>
+
+                        <p>
+                            Trabalham com sinais contínuos.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <h3>
+                            CIs Digitais
+                        </h3>
+
+                        <p>
+                            Processam informações em formato
+                            binário, utilizando 0 e 1.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+                        <h3>
+                            CIs Mistos
+                        </h3>
+
+                        <p>
+                            Combinam características dos
+                            circuitos analógicos e digitais.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= EXEMPLOS ================= -->
+
+            <section class="content-section">
+
+                <span class="section-tag">
+                    EXEMPLOS PRÁTICOS
+                </span>
+
+                <h2>
+                    Onde encontramos Circuitos Integrados?
+                </h2>
+
+                <div class="application-grid">
+
+                    <div class="application">
+
+                        <h3>
+                            Computadores
+                        </h3>
+
+                        <p>
+                            Microprocessadores e chips de
+                            memória RAM.
+                        </p>
+
+                    </div>
+
+
+                    <div class="application">
+
+                        <h3>
+                            Arduino
+                        </h3>
+
+                        <p>
+                            Microcontroladores utilizados
+                            em placas Arduino.
+                        </p>
+
+                    </div>
+
+
+                    <div class="application">
+
+                        <h3>
+                            Celulares
+                        </h3>
+
+                        <p>
+                            Chips utilizados no funcionamento
+                            dos smartphones.
+                        </p>
+
+                    </div>
+
+
+                    <div class="application">
+
+                        <h3>
+                            Televisores
+                        </h3>
+
+                        <p>
+                            Circuitos integrados utilizados
+                            nos sistemas eletrônicos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= RECURSOS VISUAIS ================= -->
+
+            <section class="content-section">
+
+                <span class="section-tag">
+                    RECURSOS VISUAIS
+                </span>
+
+                <h2>
+                    Visualizando os Circuitos Integrados
+                </h2>
+
+                <div class="info-grid">
+
+                    <div class="info-box">
+
+                        <h3>
+                            Imagens de CIs
+                        </h3>
+
+                        <p>
+                            Imagens de circuitos integrados
+                            de diferentes tamanhos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <h3>
+                            Chip aberto
+                        </h3>
+
+                        <p>
+                            Fotografias de um chip aberto
+                            mostrando seus componentes internos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <h3>
+                            Diagramas
+                        </h3>
+
+                        <p>
+                            Diagramas que representam o
+                            funcionamento de um circuito integrado.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= CURIOSIDADES ================= -->
+
+            <section class="content-section">
+
+                <span class="section-tag">
+                    CURIOSIDADES E APLICAÇÕES
+                </span>
+
+                <div class="curiosity">
+
+                    <h2>
+                        Você sabia?
+                    </h2>
+
+                    <p>
+                        Um único circuito integrado pode conter
+                        bilhões de transistores.
+                    </p>
+
+                    <p>
+                        Sua criação permitiu reduzir o tamanho
+                        dos equipamentos eletrônicos, diminuir
+                        o consumo de energia e aumentar a
+                        velocidade de processamento.
+                    </p>
+
+                    <p>
+                        Eles são essenciais em computadores,
+                        smartphones, automóveis, equipamentos
+                        médicos, eletrodomésticos e sistemas
+                        de automação industrial.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= RESUMO ================= -->
+
+            <section class="content-section">
+
+                <span class="section-tag">
+                    RESUMO
+                </span>
+
+                <div class="summary">
+
+                    <h2>
+                        Resumo para o caderno
+                    </h2>
+
+                    <p>
+                        Circuitos integrados são chips que
+                        reúnem diversos componentes eletrônicos
+                        em uma pequena estrutura semicondutora.
+                    </p>
+
+                    <p>
+                        Podem ser analógicos, digitais ou mistos
+                        e desempenham funções como processamento
+                        de dados, armazenamento e amplificação
+                        de sinais.
+                    </p>
+
+                    <p>
+                        São fundamentais para o funcionamento
+                        dos equipamentos eletrônicos modernos.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= QUIZ ================= -->
+
+            <section class="quiz-section">
+
+                <span class="section-tag">
+                    QUIZ
+                </span>
+
+                <h2>
+                    Teste seus conhecimentos
+                </h2>
+
+
+                <div class="quiz-question">
+
+                    <h3>
+                        1. O que é um circuito integrado?
+                    </h3>
+
+                    <button
+                        onclick="responderQuiz(this, true)"
+                    >
+                        Um chip que reúne diversos componentes
+                        eletrônicos em uma pequena estrutura.
+                    </button>
+
+                    <button
+                        onclick="responderQuiz(this, false)"
+                    >
+                        Um tipo de cabo utilizado em computadores.
+                    </button>
+
+                </div>
+
+
+                <div class="quiz-question">
+
+                    <h3>
+                        2. Qual material é utilizado
+                        principalmente na fabricação dos CIs?
+                    </h3>
+
+                    <button
+                        onclick="responderQuiz(this, true)"
+                    >
+                        Silício
+                    </button>
+
+                    <button
+                        onclick="responderQuiz(this, false)"
+                    >
+                        Madeira
+                    </button>
+
+                </div>
+
+
+                <div class="quiz-question">
+
+                    <h3>
+                        3. Qual é a diferença entre um CI
+                        analógico e um digital?
+                    </h3>
+
+                    <button
+                        onclick="responderQuiz(this, true)"
+                    >
+                        O analógico trabalha com sinais contínuos,
+                        enquanto o digital processa informações
+                        binárias.
+                    </button>
+
+                    <button
+                        onclick="responderQuiz(this, false)"
+                    >
+                        Não existe diferença entre eles.
+                    </button>
+
+                </div>
+
+
+                <div class="quiz-question">
+
+                    <h3>
+                        4. Cite três equipamentos que utilizam
+                        circuitos integrados.
+                    </h3>
+
+                    <button
+                        onclick="responderQuiz(this, true)"
+                    >
+                        Computadores, celulares e televisores.
+                    </button>
+
+                    <button
+                        onclick="responderQuiz(this, false)"
+                    >
+                        Apenas calculadoras antigas.
+                    </button>
+
+                </div>
+
+
+                <div class="quiz-question">
+
+                    <h3>
+                        5. Qual é uma das principais vantagens
+                        dos CIs?
+                    </h3>
+
+                    <button
+                        onclick="responderQuiz(this, true)"
+                    >
+                        Redução do tamanho dos equipamentos,
+                        maior velocidade ou menor consumo.
+                    </button>
+
+                    <button
+                        onclick="responderQuiz(this, false)"
+                    >
+                        Aumentar o tamanho dos equipamentos.
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="quiz-result"
+                    id="resultadoQuiz"
+                >
+                    Responda às perguntas para ver seu resultado.
+                </div>
+
+            </section>
+
+
+            <!-- ================= REFERENCIAS ================= -->
+
+            
+<section
+    class="content-section references"
+    id="referencias"
+>
+
+    <span class="section-tag">
+        REFERÊNCIAS
+    </span>
+
+    <h2>
+        Fontes utilizadas
+    </h2>
+
+    <p>
+        O conteúdo desta página foi elaborado com base
+        no material de estudo sobre Circuitos Integrados
+        disponibilizado pela MakerHero.
+    </p>
+
+    <div class="references">
+
+        <p>
+            <strong>MakerHero</strong> —
+            O que é Circuito Integrado: funcionamento,
+            tipos e aplicações.
+        </p>
+
+        <p>
+            Autora: Rosana Guse.
+        </p>
+
+        <p>
+            Publicado em: 23 de abril de 2024.
+        </p>
+
+        <p>
+            <a
+                href="https://www.makerhero.com/guia/componentes-eletronicos/circuito-integrado/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Acessar fonte utilizada
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 EletroTech — Portal Educacional
+            de Eletroeletrônica.
+        </p>
+
+        <p>
+            Grupo 06 — Circuitos Integrados
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+     

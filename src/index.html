@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EletroTech | Circuitos Integrados</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo-area">
+            <img src="assets/Ícone de Microchip CI com Circuitos.png" alt="Logo EletroTech">
+            <span>EletroTech</span>
+        </div>
+
+        <nav class="top-menu">
+            <a href="#inicio">Início</a>
+            <a href="#conceito">Circuitos Integrados</a>
+            <a href="#tipos">Tipos</a>
+            <a href="#referencias">Referências</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <input
+                type="search"
+                id="campoPesquisa"
+                placeholder="Pesquisar..."
+            >
+
+            <button class="btn-login" onclick="mostrarLogin()">
+                Login
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ESTRUTURA PRINCIPAL -->
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2>Módulos</h2>
+
+            <p class="sidebar-subtitle">
+                Circuitos Integrados
+            </p>
+
+            <nav class="side-menu">
+
+                <a href="#inicio" class="active">
+                    Início
+                </a>
+
+                <a href="#conceito">
+                    O que são CIs?
+                </a>
+
+                <a href="#funcionamento">
+                    Como funcionam
+                </a>
+
+                <a href="#estrutura">
+                    Estrutura
+                </a>
+
+                <a href="#tipos">
+                    Tipos de CIs
+                </a>
+
+                <a href="#aplicacoes">
+                    Aplicações
+                </a>
+
+                <a href="#vantagens">
+                    Vantagens
+                </a>
+
+                <a href="#curiosidade">
+                    Curiosidade
+                </a>
+
+                <a href="#quiz">
+                    Quiz
+                </a>
+
+                <a href="#referencias">
+                    Referências
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-content">
+
+
+            <!-- HERO -->
+            <section id="inicio" class="hero">
+
+                <div class="hero-text">
+
+                    <span class="module-label">
+                        MÓDULO 04
+                    </span>
+
+                    <h1>
+                        Circuitos Integrados
+                    </h1>
+
+                    <p>
+                        Pequenos componentes capazes de reunir diversos
+                        elementos eletrônicos em um único dispositivo,
+                        tornando possível a criação de equipamentos
+                        menores, rápidos e eficientes.
+                    </p>
+
+                    <button
+                        class="btn-primary"
+                        onclick="irPara('conceito')"
+                    >
+                        Começar estudo
+                    </button>
+
+                </div>
+
+                <div class="hero-image">
+
+                    <img
+                        src="assets/Ícone de Microchip CI com Circuitos.png"
+                        alt="Circuito Integrado"
+                    >
+
+                </div>
+
+            </section>
+
+
+            <!-- CONCEITO -->
+            <section id="conceito" class="content-section">
+
+                <span class="section-tag">
+                    CONCEITO
+                </span>
+
+                <h2>
+                    O que são Circuitos Integrados?
+                </h2>
+
+                <p>
+                    Um Circuito Integrado, conhecido pela sigla CI,
+                    é um componente eletrônico que reúne diversos
+                    elementos, como transistores, resistores e
+                    capacitores, dentro de uma única estrutura.
+                </p>
+
+                <p>
+                    Essa tecnologia permite construir circuitos
+                    eletrônicos complexos ocupando pouco espaço.
+                    Por isso, os CIs estão presentes em computadores,
+                    celulares, televisores, veículos e diversos
+                    equipamentos eletrônicos.
+                </p>
+
+            </section>
+
+
+            <!-- FUNCIONAMENTO -->
+            <section id="funcionamento" class="content-section">
+
+                <span class="section-tag">
+                    FUNCIONAMENTO
+                </span>
+
+                <h2>
+                    Como funciona um CI?
+                </h2>
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Entrada
+                        </h3>
+
+                        <p>
+                            O circuito recebe sinais elétricos
+                            através de seus terminais.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Processamento
+                        </h3>
+
+                        <p>
+                            Os componentes internos realizam
+                            operações sobre os sinais recebidos.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Saída
+                        </h3>
+
+                        <p>
+                            O CI envia o resultado através
+                            de outros terminais.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ESTRUTURA -->
+            <section id="estrutura" class="content-section">
+
+                <span class="section-tag">
+                    ESTRUTURA
+                </span>
+
+                <h2>
+                    O que existe dentro de um CI?
+                </h2>
+
+                <p>
+                    Apesar de parecer um pequeno componente externo,
+                    um circuito integrado pode possuir uma grande
+                    quantidade de componentes em seu interior.
+                </p>
+
+                <div class="info-grid">
+
+                    <div class="info-box">
+
+                        <h3>
+                            Transistores
+                        </h3>
+
+                        <p>
+                            Podem funcionar como chaves eletrônicas
+                            ou participar da amplificação de sinais.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <h3>
+                            Resistores
+                        </h3>
+
+                        <p>
+                            Auxiliam no controle de corrente e
+                            tensão dentro dos circuitos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <h3>
+                            Capacitores
+                        </h3>
+
+                        <p>
+                            Podem ser utilizados para armazenamento
+                            temporário de carga e filtragem.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TIPOS -->
+            <section id="tipos" class="content-section">
+
+                <span class="section-tag">
+                    CLASSIFICAÇÃO
+                </span>
+
+                <h2>
+                    Tipos de Circuitos Integrados
+                </h2>
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <h3>
+                            CIs Digitais
+                        </h3>
+
+                        <p>
+                            Trabalham principalmente com sinais
+                            digitais e são utilizados em sistemas
+                            lógicos e computadores.
+                        </p>
+
+                        <ul>
+                            <li>Processadores</li>
+                            <li>Memórias</li>
+                            <li>Portas lógicas</li>
+                            <li>Microcontroladores</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>
+                            CIs Analógicos
+                        </h3>
+
+                        <p>
+                            Trabalham com sinais que podem variar
+                            continuamente.
+                        </p>
+
+                        <ul>
+                            <li>Amplificadores</li>
+                            <li>Reguladores de tensão</li>
+                            <li>Filtros</li>
+                            <li>Osciladores</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>
+                            CIs Mistos
+                        </h3>
+
+                        <p>
+                            Combinam funções analógicas e digitais
+                            no mesmo circuito integrado.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- APLICAÇÕES -->
+            <section id="aplicacoes" class="content-section">
+
+                <span class="section-tag">
+                    APLICAÇÕES
+                </span>
+
+                <h2>
+                    Onde os CIs são utilizados?
+                </h2>
+
+                <div class="application-grid">
+
+                    <div class="application">
+                        <span>💻</span>
+                        <h3>Computadores</h3>
+                        <p>
+                            Processadores, memórias e controladores.
+                        </p>
+                    </div>
+
+                    <div class="application">
+                        <span>📱</span>
+                        <h3>Celulares</h3>
+                        <p>
+                            Processamento, comunicação e gerenciamento
+                            de energia.
+                        </p>
+                    </div>
+
+                    <div class="application">
+                        <span>🚗</span>
+                        <h3>Automóveis</h3>
+                        <p>
+                            Controle eletrônico de diversos sistemas.
+                        </p>
+                    </div>
+
+                    <div class="application">
+                        <span>🏭</span>
+                        <h3>Indústria</h3>
+                        <p>
+                            Automação, sensores e sistemas de controle.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- VANTAGENS -->
+            <section id="vantagens" class="content-section">
+
+                <span class="section-tag">
+                    VANTAGENS
+                </span>
+
+                <h2>
+                    Por que utilizar Circuitos Integrados?
+                </h2>
+
+                <div class="advantages">
+
+                    <div>
+                        <strong>✓ Menor tamanho</strong>
+                        <p>
+                            Muitos componentes podem ser reunidos
+                            em um espaço muito pequeno.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>✓ Maior confiabilidade</strong>
+                        <p>
+                            Redução da quantidade de conexões externas.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>✓ Maior eficiência</strong>
+                        <p>
+                            Permitem criar sistemas eletrônicos
+                            complexos e eficientes.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>✓ Produção em escala</strong>
+                        <p>
+                            Podem ser fabricados em grande quantidade.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CURIOSIDADE -->
+            <section id="curiosidade" class="curiosity">
+
+                <span>💡</span>
+
+                <div>
+
+                    <h2>
+                        Você sabia?
+                    </h2>
+
+                    <p>
+                        Um único circuito integrado moderno pode
+                        conter bilhões de transistores em uma área
+                        extremamente pequena.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESUMO -->
+            <section class="summary">
+
+                <span class="section-tag">
+                    RESUMO
+                </span>
+
+                <h2>
+                    Para lembrar
+                </h2>
+
+                <p>
+                    Circuitos Integrados são componentes que reúnem
+                    diversos elementos eletrônicos em uma única
+                    estrutura. Eles podem ser encontrados em sistemas
+                    digitais, analógicos e mistos e são fundamentais
+                    para o funcionamento da eletrônica moderna.
+                </p>
+
+            </section>
+
+
+            <!-- QUIZ -->
+            <section id="quiz" class="quiz-section">
+
+                <span class="section-tag">
+                    TESTE SEUS CONHECIMENTOS
+                </span>
+
+                <h2>
+                    🧠 Quiz sobre Circuitos Integrados
+                </h2>
+
+                <div class="quiz-question">
+
+                    <h3>
+                        1. O que significa a sigla CI?
+                    </h3>
+
+                    <button onclick="responderQuiz(this, true)">
+                        Circuito Integrado
+                    </button>
+
+                    <button onclick="responderQuiz(this, false)">
+                        Controle Industrial
+                    </button>
+
+                    <button onclick="responderQuiz(this, false)">
+                        Circuito Isolado
+                    </button>
+
+                </div>
+
+
+                <div class="quiz-question">
+
+                    <h3>
+                        2. Qual componente pode fazer parte de um CI?
+                    </h3>
+
+                    <button onclick="responderQuiz(this, true)">
+                        Transistor
+                    </button>
+
+                    <button onclick="responderQuiz(this, false)">
+                        Interruptor residencial
+                    </button>
+
+                    <button onclick="responderQuiz(this, false)">
+                        Fusível externo
+                    </button>
+
+                </div>
+
+
+                <div id="resultadoQuiz" class="quiz-result">
+                    Responda às perguntas.
+                </div>
+
+            </section>
+
+
+            <!-- REFERÊNCIAS -->
+            <section id="referencias" class="content-section">
+
+                <span class="section-tag">
+                    REFERÊNCIAS
+                </span>
+
+                <h2>
+                    Referências utilizadas
+                </h2>
+
+                <div class="references">
+
+                    <p>
+                        • Material didático de Eletroeletrônica.
+                    </p>
+
+                    <p>
+                        • Documentação e materiais técnicos utilizados
+                        durante a pesquisa.
+                    </p>
+
+                    <p>
+                        • Imagens utilizadas com seus respectivos
+                        créditos conforme orientação do projeto.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div>
+            <strong>EletroTech</strong>
+
+            <p>
+                Portal Educacional de Eletroeletrônica
+            </p>
+        </div>
+
+        <div>
+            <strong>Circuitos Integrados</strong>
+
+            <p>
+                Tecnologia • Educação • Eletrônica
+            </p>
+        </div>
+
+        <div>
+            <strong>Mapa do site</strong>
+
+            <p>
+                Início • CIs • Tipos • Aplicações • Quiz
+            </p>
+        </div>
+
+        <div>
+            <strong>Contato</strong>
+
+            <p>
+                Projeto educacional SENAI
+            </p>
+        </div>
+
+        <div class="copyright">
+            © 2026 EletroTech
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
